@@ -15,7 +15,7 @@ header{
 	background-image: radial-gradient(darkgray, black , black);
   display: flex;
   position: sticky;
-  width: 80%;
+  width: 90%;
   align-items: center;
   margin:auto;
 }
@@ -77,4 +77,7 @@ main{
 .topMusicas{
   background-color: gray;
   width: 50%;
+}
+.lista{
+  list-style: none;
 }
