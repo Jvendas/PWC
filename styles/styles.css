@@ -74,10 +74,6 @@ main{
   align-items: center;
   width: 85%
 }
-.topMusicas{
-  background-color: gray;
-  width: 50%;
-}
 .lista{
   list-style: none;
 }

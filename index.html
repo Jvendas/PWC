@@ -21,8 +21,8 @@
 			<img class="logo" src="imgs/logo.PNG" alt="Logo">
 		</div>
 		<div class="pesquisa-container">
-			<input class=campoPesquisa type="text" name="pesquisa" placeholder="Procure uma Música, Artista ou Álbum" >
-			<button class="btn-container"><img class="btnPesquisa" src="imgs/lupa.png"></button>
+			<input class=campoPesquisa id="pesquisa" type="text" name="pesquisa" placeholder="Procure uma Música, Artista ou Álbum" >
+			<button class="btn-container" id="btnSearch"><img class="btnPesquisa" src="imgs/lupa.png"></button>
 		</div>
 		<div class="nav-container">
 			<nav>
@@ -36,15 +36,24 @@
 		</div>
 	</header>
 	<main>
-		<div class="topMusicas">
-			<div class="topMusicas-title">
-				<h2>Músicas do Momento</h2>
+		<div>
+			<div>
+				<h2>Pesquisa</h2>
 			</div>
-			<ol class="lista">
-				<li></li>
-				<li></li>
-				<li></li>
-			</ol>
+			<div>
+				<h3 class="musicas-title">Musicas</h3>
+			</div>
+			<ul class="lista">
+				<li class="musica-info">
+					<div class="">
+							<img src="" class="media-object" id="img">
+						</div>
+						<div class="media-body">
+							<h4 class="nome-musica"></h4>
+							<h4 class="nome-artista"></h4>
+					</div>
+				</li>
+			</ul>
 		</div>
 		<h1>My First Heading</h1>
 		<p>My first paragraph.</p>
