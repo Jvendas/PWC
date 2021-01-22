@@ -8,6 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
 	
@@ -35,28 +36,45 @@
 			
 		</div>
 	</header>
+	<div class="topnav">
+  		<a href="#home" class="active">Logo</a>
+  <!-- Navigation links (hidden by default) -->
+  		<div id="myLinks">
+    		<a href="#news">News</a>
+    		<a href="#contact">Contact</a>
+    		<a href="#about">About</a>
+  		</div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    		<i class="fa fa-bars"></i>
+ 		 </a>
+	</div>
 	<main>
-		<div>
-			<div>
-				<h2>Pesquisa</h2>
-			</div>
-			<div>
-				<h3 class="musicas-title">Musicas</h3>
-			</div>
-			<ul class="lista">
-				<li class="musica-info">
-					<div class="">
-							<img src="" class="media-object" id="img">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Resultados de Pesquisa</h3>		
+		</div>
+		<div class="panel-body">
+			<div class="media-group">
+				<ul class="media-list">
+					<li class="media">
+						<div class="media-left">
+							<a href="" class="thumbnail">
+								<img src="" class="media-object" id="img">
+							</a>
 						</div>
 						<div class="media-body">
-							<h4 class="nome-musica"></h4>
-							<h4 class="nome-artista"></h4>
-					</div>
-				</li>
-			</ul>
+							<h4 class="title media-heading"></h4>
+							<p>
+								<span class="ano"></span>
+								<span class="tipo"></span>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<h1>My First Heading</h1>
-		<p>My first paragraph.</p>
+	</div>
 	</main>
 
 	<script type="text/javascript" src="js/script.js"></script>
