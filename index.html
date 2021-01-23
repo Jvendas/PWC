@@ -3,9 +3,8 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>PTM</title>
+	<title>MUSIC</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,7 +27,7 @@
 		<div class="nav-container">
 			<nav>
 				<ul>
-					<li class="link"><a href="#Home">Página Inicial</a></li>
+					<li class="link"><a href="#Home">Home</a></li>
 					<li class="link"><a href="#Login">Login</a></li>
 					<li class="link"><a href="#About">About</a></li>
 				</ul>
@@ -36,45 +35,101 @@
 			
 		</div>
 	</header>
-	<div class="topnav">
-  		<a href="#home" class="active">Logo</a>
-  <!-- Navigation links (hidden by default) -->
-  		<div id="myLinks">
-    		<a href="#news">News</a>
-    		<a href="#contact">Contact</a>
-    		<a href="#about">About</a>
-  		</div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    		<i class="fa fa-bars"></i>
- 		 </a>
-	</div>
 	<main>
-		<div class="panel panel-default">
-		<div class="panel-heading">
-			<h3 class="panel-title">Resultados de Pesquisa</h3>		
-		</div>
-		<div class="panel-body">
-			<div class="media-group">
-				<ul class="media-list">
-					<li class="media">
-						<div class="media-left">
-							<a href="" class="thumbnail">
-								<img src="" class="media-object" id="img">
-							</a>
-						</div>
+		<div id="pesquisa-detalhes" class="detalhes-display">
+			<div>
+				<img id="imagem-musica" src="" alt="">
+			</div>
+			<div>
+				<ul class="details-list">
+					<li class="top-display">
 						<div class="media-body">
-							<h4 class="title media-heading"></h4>
-							<p>
-								<span class="ano"></span>
-								<span class="tipo"></span>
-							</p>
+							<div>
+								<h2 class="nome-detalhes"></h2>
+								<h3 class="artista-detalhes"></h3>
+								<h3 class="album-detalhes"></h3>
+								<h4 class="musica-genero"></h4>
+							</div>
 						</div>
 					</li>
 				</ul>
+				
 			</div>
 		</div>
-	</div>
+		<div id="top-musicas">
+			<div class="panel-heading">
+				<h2 class="top-artistas">Top 10 Musicas Portuguesas</h2>		
+			</div>
+			<div class="panel-body">
+				<div class="media-group">
+					<ul class="top-list">
+						<li class="top-display">
+							<div class="top-media">
+								<h3 class="title-music"></h3>
+								<h4 class="title-artist"></h4>
+								<div>
+									<button id="btn-Detalhes" class="detalhes" value="">Details</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="pesquisa-artistas">
+			<div class="panel-heading">
+				<h2 class="panel-title-artistas"></h2>		
+			</div>
+			<div class="panel-body">
+				<div class="media-group">
+					<ul class="artist-list">
+						<li class="artist-display">
+							<div class="media-body">
+								<h3 class="title-artista media-heading"></h3>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="pesquisa-albuns">
+			<div class="panel-heading">
+				<h2 class="panel-title-albuns"></h2>	
+			</div>
+			<div class="panel-body">
+				<div class="media-group">
+					<ul class="album-list">
+						<li class="album-display">
+							<div class="media-left">
+								<img src="" alt="" id="imagem-album">
+							</div>
+							<div class="media-body">
+								<h3 class="title-album media-heading"></h3>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="pesquisa-musicas">
+			<div class="panel-heading">
+				<h2 class="panel-title-musicas"></h2>		
+			</div>
+			<div class="panel-body">
+				<div class="media-group">
+					<ul class="music-list">
+						<li class="music-display">
+							<div class="media-left">
+							</div>
+							<div class="media-body">
+								<h3 class="title-musica media-heading"></h3>
+								<h4 class="artista-musica"></h4>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</main>
 
 	<script type="text/javascript" src="js/script.js"></script>

@@ -3,22 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-.topnav{
-  display: none;
-}
 body{
   background-color: white;
   font-family: 'Poppins', sans-serif;
   align-items: center;
   margin: auto;
   margin-top: 0px;
-
+  width: 90%;
+  overflow-x: hidden; 
 }
 header{
-	background-image: radial-gradient(darkgray, black , black);
+	background-image: radial-gradient(gray, black , black);
   display: flex;
   position: sticky;
-  width: 90%;
   align-items: center;
   margin:auto;
 }
@@ -38,7 +35,8 @@ header{
   margin: auto;
 }
 .campoPesquisa{
-  width: 90%;
+  width: 85%;
+  font-size: 16px;
 }
 .btn-container{
   width: 10%;
@@ -50,10 +48,11 @@ header{
   width: 25%;
   margin: auto;
   justify-content: space-between;
-  align-items: center;
+  align-items: center ;
 }
 nav ul li{
   display: inline-flex;
+
   
 }
 a:link, a:visited {
@@ -77,8 +76,21 @@ main{
   align-items: center;
   width: 85%
 }
-.lista{
-  list-style: none;
+.music-display{
+  text-decoration: none;
+  display: inline-flex;
+}
+.artist-display{
+  text-decoration: none;
+  display: inline-flex;
+}
+.album-display{
+  text-decoration: none;
+  display: inline-flex;
+}
+.top-display{
+  text-decoration: none;
+  display: inline-flex;
 }
 @media only screen and (max-width:  1px){
   header{
