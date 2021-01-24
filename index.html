@@ -10,8 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
-	
-
+	<link rel="stylesheet" type="text/css" href="slider/slider.css">
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 
 </head>
@@ -36,26 +35,35 @@
 		</div>
 	</header>
 	<main>
-		<div id="pesquisa-detalhes" class="detalhes-display">
-			<div>
-				<img id="imagem-musica" src="" alt="">
+		<article class="slider">
+
+			<div class="slide">
+			  <img src="imgs/1" alt="">
+			  <div class="slide-content">
+				<p class="slide-title">Slide 1</p>
+			  </div>
 			</div>
-			<div>
-				<ul class="details-list">
-					<li class="top-display">
-						<div class="media-body">
-							<div>
-								<h2 class="nome-detalhes"></h2>
-								<h3 class="artista-detalhes"></h3>
-								<h3 class="album-detalhes"></h3>
-								<h4 class="musica-genero"></h4>
-							</div>
-						</div>
-					</li>
-				</ul>
-				
+		  
+			<div class="slide">
+			  <img src="imgs/2.jpg" alt="">
+			  <div class="slide-content">
+				<p class="slide-title">Slide 2</p>
+			  </div>
 			</div>
-		</div>
+		  
+			<div class="slide">
+			  <img src="imgs/3.jpg" alt="">
+			  <div class="slide-content">
+				<p class="slide-title">Slide 3</p>
+			  </div>
+			</div>
+		  
+			<nav class="slider-nav">
+			  <span class="prev-slide"></span>
+			  <span class="next-slide"></span>
+			</nav>
+			
+		</article>
 		<div id="top-musicas">
 			<div class="panel-heading">
 				<h2 class="top-artistas">Top 10 Musicas Portuguesas</h2>		
@@ -67,9 +75,7 @@
 							<div class="top-media">
 								<h3 class="title-music"></h3>
 								<h4 class="title-artist"></h4>
-								<div>
-									<button id="btn-Detalhes" class="detalhes" value="">Details</button>
-								</div>
+								<a class= "pagina-detalhes" href="">Detalhes</a>
 							</div>
 						</li>
 					</ul>
@@ -124,6 +130,7 @@
 							<div class="media-body">
 								<h3 class="title-musica media-heading"></h3>
 								<h4 class="artista-musica"></h4>
+								<a class= "pagina-detalhes" href="">Detalhes</a>
 							</div>
 						</li>
 					</ul>
@@ -131,7 +138,6 @@
 			</div>
 		</div>
 	</main>
-
 	<script type="text/javascript" src="js/script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>

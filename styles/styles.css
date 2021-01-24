@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: white;
+  background-color: lightgray;
   font-family: 'Poppins', sans-serif;
   align-items: center;
   margin: auto;
@@ -74,7 +74,7 @@ main{
   margin: auto;
   background-color: white;
   align-items: center;
-  width: 85%
+  width: 95%;
 }
 .music-display{
   text-decoration: none;
@@ -88,9 +88,8 @@ main{
   text-decoration: none;
   display: inline-flex;
 }
-.top-display{
+.detalhes-display{
   text-decoration: none;
-  display: inline-flex;
 }
 @media only screen and (max-width:  1px){
   header{

@@ -6,39 +6,10 @@ var cloneMusicas = $('.music-display').clone();
 var cloneArtistas = $('.artist-display').clone();
 var cloneAlbuns = $('.album-display').clone();
 var cloneTop = $('.top-display').clone();
-var cloneDetalhes=$('.detalhes-display').clone();
+
 $('#pesquisa-musicas').hide();
 $('#pesquisa-artistas').hide();
 $('#pesquisa-albuns').hide();
-$('#pesquisa-detalhes').hide();
-
-
-
-//Apresentação de detalhes de Musicas
-$('.detalhes').click(function(){
-    var link_detalhes = $(this).val();
-    console.log('hello');
-    console.log(link_detalhes);
-    $('#pesquisa-musicas').hide();
-    $('#pesquisa-artistas').hide();
-    $('#pesquisa-albuns').hide();
-    $('#top-musicas').hide();
-    $('#pesquisa-detalhes').empty();
-    $('#pesquisa-detalhes').show();
-    $.ajax({
-        method:"GET",
-        url: link_detalhes,
-    }).done(function(){
-        var liDetalhes = cloneDetalhes.clone();
-        console.log(liDetalhes);
-        $('.nome-detalhes',liDetalhes).text(result.track.name);
-        $('.artista-detalhes', liDetalhes).text(result.artist.name);
-        $('.album-detalhes', liDetalhes).text(result.title);    
-        $('.musica-genero', liDetalhes).text(result.toptags);
-        $('.details-list').append(liDetalhes);
-    })
-    
-});
 
 //Apresentação de top Musicas
 $(document).ready(function() {
@@ -51,12 +22,11 @@ $(document).ready(function() {
             var liTop  = cloneTop.clone();
             $('.title-music',liTop).text(result.name);
             $('.title-artist', liTop).text(result.artist.name);
-            $('.detalhes', liTop).attr("value","http://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key="+apiKey+"&artist="+result.artist.name+"&track="+result.name+"&format=json");
-            
+            $('.pagina-detalhes', liTop).prop("href","./detalhes.html?var1="+result.name+"&var2="+result.artist.name);
             $('.top-list').append(liTop);
         })
     })
-
+    
 });
 
        
@@ -68,9 +38,9 @@ $('#btnSearch').click(function(){
     $('.panel-title-musicas').text('Resultados de Músicas para "'+ valorPesquisa + '"');
     $('.panel-title-artistas').text('Resultados de Artistas para "'+ valorPesquisa + '"');
     $('.panel-title-albuns').text('Resultados de Albuns para "'+ valorPesquisa + '"');
-    $(".music-list").empty()
-    $(".artist-list").empty()
-    $(".album-list").empty()
+    $(".music-list").empty();
+    $(".artist-list").empty();
+    $(".album-list").empty();
     $('#pesquisa-artistas').show();
     $('#pesquisa-musicas').show();
     $('#pesquisa-albuns').show();
@@ -103,7 +73,7 @@ $('#btnSearch').click(function(){
         })
     })
 
-        //Pesquisar Artistas
+        //Pesquisar Musicas
     $.ajax({
         method:"GET",
         url:"http://ws.audioscrobbler.com/2.0/?method=track.search&track="+valorPesquisa+"&api_key="+apiKey+"&format=json&limit=10"
@@ -112,6 +82,7 @@ $('#btnSearch').click(function(){
             var liMusica  = cloneMusicas.clone();
             $('.title-musica',liMusica).text(result.name);
             $('.artista-musica', liMusica).text(result.artist);
+            $('.pagina-detalhes', liMusica).prop("href","./detalhes.html?var1="+result.name+"&var2="+result.artist);
             $('.music-list').append(liMusica);
         })
     })

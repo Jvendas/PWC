@@ -1,0 +1,117 @@
+<!DOCTYPE html>	
+<meta charset="utf-8">
+	<title>MUSIC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+	
+
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+</head>
+<body>
+	<header>
+		<div class="logo-container">
+			<img class="logo" src="imgs/logo.PNG" alt="Logo">
+		</div>
+		<div class="pesquisa-container">
+			<input class=campoPesquisa id="pesquisa" type="text" name="pesquisa" placeholder="Procure uma Música, Artista ou Álbum" >
+			<button class="btn-container" id="btnSearch"><img class="btnPesquisa" src="imgs/lupa.png"></button>
+		</div>
+		<div class="nav-container">
+			<nav>
+				<ul>
+					<li class="link"><a href="#Home">Home</a></li>
+					<li class="link"><a href="#Login">Login</a></li>
+					<li class="link"><a href="#About">About</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+    </header>
+    <div id="detalhes-musica">
+        <div class="panel-body">
+            <div class="media-group">
+                <ul class="details-list">
+                    <li class="detalhes-display">
+                        <div>
+                            <img id="imagem-musica" src="">
+                        </div>
+                        <div class="top-media">
+                            <h2 class="listeners"></h2>
+                            <h3 class="title-music"></h3>
+                            <h4 class="title-artist"></h4>
+                            <h4 class="title-album"></h4>
+                            <h4 class="title-artist"></h4>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="pesquisa-artistas">
+        <div class="panel-heading">
+            <h2 class="panel-title-artistas"></h2>		
+        </div>
+        <div class="panel-body">
+            <div class="media-group">
+                <ul class="artist-list">
+                    <li class="artist-display">
+                        <div class="media-body">
+                            <h3 class="title-artista media-heading"></h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="pesquisa-albuns">
+        <div class="panel-heading">
+            <h2 class="panel-title-albuns"></h2>	
+        </div>
+        <div class="panel-body">
+            <div class="media-group">
+                <ul class="album-list">
+                    <li class="album-display">
+                        <div class="media-left">
+                            <img src="" alt="" id="imagem-album">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="title-album media-heading"></h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="pesquisa-musicas">
+        <div class="panel-heading">
+            <h2 class="panel-title-musicas"></h2>		
+        </div>
+        <div class="panel-body">
+            <div class="media-group">
+                <ul class="music-list">
+                    <li class="music-display">
+                        <div class="media-left">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="title-musica media-heading"></h3>
+                            <h4 class="artista-musica"></h4>
+                            <a class= "pagina-detalhes" href="">Detalhes</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	<script type="text/javascript" src="detalhes_js/detalhes_script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+
+</body>
