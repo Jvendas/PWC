@@ -1,12 +1,7 @@
-*{
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 body{
-  background-color: lightgray;
+  background-color: darkgray;
   font-family: 'Poppins', sans-serif;
-  align-items: center;
   margin: auto;
   margin-top: 0px;
   width: 90%;
@@ -49,17 +44,16 @@ header{
   margin: auto;
   justify-content: space-between;
   align-items: center ;
+  float: right;
 }
-nav ul li{
+nav ul li.link{
   display: inline-flex;
-
-  
 }
 a:link, a:visited {
   background-color: #0099cc;
   color: white;
   border: 2px solid #0099cc;
-  padding: 2px 8px;
+  padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -72,10 +66,11 @@ a:hover, a:active {
 }
 main{
   margin: auto;
-  background-color: white;
+  background-color: darkgray;
   align-items: center;
   width: 95%;
 }
+
 .music-display{
   text-decoration: none;
   display: inline-flex;
@@ -91,58 +86,29 @@ main{
 .detalhes-display{
   text-decoration: none;
 }
-@media only screen and (max-width:  1px){
-  header{
-    display: none;
-  }
-  body{
-    background-color: white;
-    font-family: 'Poppins', sans-serif;
-    align-items: center;
-    margin: auto;
-    margin-top: 0px;
-  }
-  nav ul li{
-    display: inline-flex;
-  }
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-  }
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
-  }
-
-/* Style navigation menu links */
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-
-/* Style the hamburger menu */
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-/* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-/* Style the active link (or home/logo) */
-  .active {
-    background-color: #4CAF50;
-    color: white;
-  }
+.top-list {
+  column-count:2;
+  column-gap: 10%;
+}
+.caixa-texto{
+  background-image: linear-gradient(to right, darkgray, white, darkgray);
+  display: inline-block;
+  position: relative;
+  margin-top: 30%;
+  width: 90%;
+  margin-left: 5%;
+}
+.itens{
+  column-count:2;
+  text-decoration: none;
+}
+.info{
+  display: inline-block;
+}
+.botoes{
+  display: inline-block;
+  margin-top: 5%;
+}
+ul {
+  list-style-type: none;
 }

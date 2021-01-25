@@ -20,7 +20,7 @@
 			<img class="logo" src="imgs/logo.PNG" alt="Logo">
 		</div>
 		<div class="pesquisa-container">
-			<input class=campoPesquisa id="pesquisa" type="text" name="pesquisa" placeholder="Procure uma Música, Artista ou Álbum" >
+			<input class=campoPesquisa id="pesquisa" type="text" name="pesquisa" placeholder="  Procure uma Música, Artista ou Álbum" >
 			<button class="btn-container" id="btnSearch"><img class="btnPesquisa" src="imgs/lupa.png"></button>
 		</div>
 		<div class="nav-container">
@@ -35,50 +35,54 @@
 		</div>
 	</header>
 	<main>
-		<article class="slider">
+		<div class="slider">
+			<div class="slide">
+				<a ></a><img src="imgs/maxresdefault.jpg" alt=""></a>
+			</div>
 
 			<div class="slide">
-			  <img src="imgs/1" alt="">
-			  <div class="slide-content">
-				<p class="slide-title">Slide 1</p>
-			  </div>
+				<img src="https://source.unsplash.com/X08XUu21yzk/1280x720" alt="">
 			</div>
-		  
+
 			<div class="slide">
-			  <img src="imgs/2.jpg" alt="">
-			  <div class="slide-content">
-				<p class="slide-title">Slide 2</p>
-			  </div>
+				<img src="https://source.unsplash.com/yp0vrzZlqUQ/1280x720" alt="">
 			</div>
-		  
+
 			<div class="slide">
-			  <img src="imgs/3.jpg" alt="">
-			  <div class="slide-content">
-				<p class="slide-title">Slide 3</p>
-			  </div>
+				<img src="https://source.unsplash.com/oigq0Qf-r6Y/1280x720" alt="">
 			</div>
-		  
+
 			<nav class="slider-nav">
-			  <span class="prev-slide"></span>
-			  <span class="next-slide"></span>
+				<span class="prev-slide"></span>
+				<span class="next-slide"></span>
 			</nav>
-			
-		</article>
-		<div id="top-musicas">
+		</div>
+		<div id="top-musicas" class="caixa-texto">
 			<div class="panel-heading">
 				<h2 class="top-artistas">Top 10 Musicas Portuguesas</h2>		
 			</div>
 			<div class="panel-body">
 				<div class="media-group">
-					<ul class="top-list">
+					<ol type="1" class="top-list">
 						<li class="top-display">
 							<div class="top-media">
-								<h3 class="title-music"></h3>
-								<h4 class="title-artist"></h4>
-								<a class= "pagina-detalhes" href="">Detalhes</a>
+								<ul class="itens">
+									<li class="field">
+										<div class="info">
+											<h3 class="title-music"></h3>
+											<h4 class="title-artist"></h4>
+										</div>
+									</li>
+									<li>
+										<div class="botoes">
+											<a class= "pagina-detalhes" href="">Detalhes</a>
+											<button>FAV</button>
+										</div>
+									</li>
+								</ul>
 							</div>
 						</li>
-					</ul>
+					</ol>
 				</div>
 			</div>
 		</div>
@@ -139,6 +143,7 @@
 		</div>
 	</main>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="slider_js/slider.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
 </body>
