@@ -77,12 +77,12 @@
 
 .prev-slide {
   left: 2%;
-  top: 50%;
+  bottom: 50%;
 }
 
 .next-slide {
   right: 2%;
-  top: 50%;
+  bottom: 50%;
 }
 
 .next-slide:hover,

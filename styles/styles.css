@@ -1,7 +1,6 @@
 
 body{
   background-color: darkgray;
-  font-family: 'Poppins', sans-serif;
   margin: auto;
   margin-top: 0px;
   width: 90%;
@@ -35,6 +34,7 @@ header{
 }
 .btn-container{
   width: 10%;
+  background-color: lightblue;
 }
 .btnPesquisa{
   width: 60%;
@@ -51,7 +51,7 @@ nav ul li.link{
 }
 a:link, a:visited {
   background-color: #0099cc;
-  color: white;
+  color:white;
   border: 2px solid #0099cc;
   padding: 8px 16px;
   text-align: center;
@@ -60,8 +60,8 @@ a:link, a:visited {
   margin-top: 10px;
   margin-left: 7px;
 }
-a:hover, a:active {
-  background-color: white;
+a:hover, a:active .link{
+  background-color:gray;
   color: black;
 }
 main{
@@ -94,7 +94,7 @@ main{
   background-image: linear-gradient(to right, darkgray, white, darkgray);
   display: inline-block;
   position: relative;
-  margin-top: 30%;
+  margin-top: 28%;
   width: 90%;
   margin-left: 5%;
 }
@@ -106,9 +106,17 @@ main{
   display: inline-block;
 }
 .botoes{
-  display: inline-block;
+  display: inline-flex;
   margin-top: 5%;
 }
 ul {
   list-style-type: none;
+}
+ol{
+  font-size: 40px;
+}
+
+button{
+  background: none;
+  border-style: none;
 }

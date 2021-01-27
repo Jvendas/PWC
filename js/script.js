@@ -26,7 +26,10 @@ $(document).ready(function() {
             $('.top-list').append(liTop);
         })
     })
+    $('#fav-button').click(function(){
+        console.log("ADD to FAV");
     
+    })
 });
 
        
