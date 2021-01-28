@@ -3,6 +3,7 @@ body{
   background-color: darkgray;
   margin: auto;
   margin-top: 0px;
+  margin-bottom: 0px;
   width: 90%;
   overflow-x: hidden; 
 }
@@ -115,8 +116,23 @@ ul {
 ol{
   font-size: 40px;
 }
-
 button{
   background: none;
   border-style: none;
+}
+h2{
+  color: #000b9e;
+  font-family: Comic Sans MS;
+  text-shadow: 2px 2px  #0099cc;
+  font-size: 60px;
+}
+footer{
+  background: #3d3c3c;
+  margin-bottom: 0px;
+}
+.rodape{
+  color: white;
+}
+div.desenvolvedores{
+
 }
