@@ -3,16 +3,25 @@ body{
   background-color: darkgray;
   margin: auto;
   margin-top: 0px;
+<<<<<<< Updated upstream
   margin-bottom: 0px;
   width: 90%;
+=======
+
+>>>>>>> Stashed changes
   overflow-x: hidden; 
 }
 header{
 	background-image: radial-gradient(gray, black , black);
-  display: flex;
-  position: sticky;
+  display: inline-flex;
+  position: fixed;
   align-items: center;
-  margin:auto;
+  margin-left: 5%;
+  width: 90%;
+}
+.topmusicas{
+  background-image: radial-gradient();
+  position: left;
 }
 	
 .logo-container{
