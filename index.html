@@ -31,7 +31,6 @@
 					<li class="link"><a href="#About">About</a></li>
 				</ul>
 			</nav>
-			
 		</div>
 	</header>
 	<main>
@@ -93,8 +92,8 @@
 									</li>
 									<li>
 										<div class="botoes">
-											<a class= "pagina-detalhes" href=""><img src="imgs/details.png"></a>
-											<button id="fav-button"><img src="imgs/heart_fav.png"></button>
+											<img src="imgs/details.png">
+											<button class="fav-button" id="fav" onclick="adicionar_musica()"><img src="imgs/heart_fav.png"></button>
 										</div>
 									</li>
 								</ul>
@@ -104,9 +103,9 @@
 				</div>
 			</div>
 		</div>
-		<div id="pesquisa-artistas">
+		<div id="pesquisa-artistas" class="caixa-texto">
 			<div class="panel-heading">
-				<h2 class="panel-title-artistas"></h2>		
+				<h3 class="panel-title-artistas"></h3>		
 			</div>
 			<div class="panel-body">
 				<div class="media-group">
@@ -120,9 +119,9 @@
 				</div>
 			</div>
 		</div>
-		<div id="pesquisa-albuns">
+		<div id="pesquisa-albuns" class="caixa-texto1">
 			<div class="panel-heading">
-				<h2 class="panel-title-albuns"></h2>	
+				<h3 class="panel-title-albuns"></h3>	
 			</div>
 			<div class="panel-body">
 				<div class="media-group">
@@ -139,27 +138,62 @@
 				</div>
 			</div>
 		</div>
-		<div id="pesquisa-musicas">
+		<div id="pesquisa-musicas"class="caixa-texto1">
 			<div class="panel-heading">
-				<h2 class="panel-title-musicas"></h2>		
+				<h3 class="panel-title-musicas"></h3>		
 			</div>
 			<div class="panel-body">
 				<div class="media-group">
 					<ul class="music-list">
 						<li class="music-display">
-							<div class="media-left">
-							</div>
-							<div class="media-body">
-								<h3 class="title-musica media-heading"></h3>
-								<h4 class="artista-musica"></h4>
-								<a class= "pagina-detalhes" href="">Detalhes</a>
-							</div>
+							<ul>
+								<li>
+									<div>
+										<h3 class="title-musica media-heading"></h3>
+										<h4 class="artista-musica"></h4>
+									</div>
+								</li>
+								<li>
+									<div class="botoes">
+										<img src="imgs/details.png">
+										<button id="fav-button"><img src="imgs/heart_fav.png"></button>
+										<a class= "pagina-detalhes" href="">Detalhes</a>
+									</div>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</main>
+	<footer>
+		<div>
+			<img >
+		</div>
+		<div class="slogan">
+			<h3>PlayTheMusic</h3>
+			<h4>Seleciona as tuas músicas!</h4>
+
+		</div>
+		<div class="desenvolvedores">
+			<h3>Desenvolvedores</h3>
+			<h4>Daniel Arroteia</h4>
+			<h4>João Vendeirinho</h4>
+		</div>
+		<div class="contactos">
+			<h3>Contactos</h3>
+			<h4>2201163@my.ipleiria.pt</h4> 
+			<h4>2201147@my.ipleiria.pt</h4>
+		</div>
+		<div class="redes_sociais">
+			<img src="imgs/facebook.png">
+			<img src="imgs/instagram.png">
+			<img src="imgs/twitter.png" >
+
+
+		</div>
+	</footer>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="slider_js/slider.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
