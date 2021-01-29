@@ -3,20 +3,17 @@ body{
   background-color: darkgray;
   margin: auto;
   margin-top: 0px;
-<<<<<<< Updated upstream
   margin-bottom: 0px;
   width: 90%;
-=======
-
->>>>>>> Stashed changes
   overflow-x: hidden; 
 }
 header{
 	background-image: radial-gradient(gray, black , black);
   display: inline-flex;
-  position: fixed;
+  position: static;
   align-items: center;
   margin-left: 5%;
+  border-radius:25px;
   width: 90%;
 }
 .topmusicas{
@@ -108,6 +105,13 @@ main{
   width: 90%;
   margin-left: 5%;
 }
+.caixa-texto1{
+  background-image: linear-gradient(to right, darkgray, white, darkgray);
+  display: inline-block;
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+}
 .itens{
   column-count:2;
   text-decoration: none;
@@ -136,12 +140,36 @@ h2{
   font-size: 60px;
 }
 footer{
+  padding-top: 5px;
+  padding-bottom: 5px;
   background: #3d3c3c;
-  margin-bottom: 0px;
-}
-.rodape{
+  color: #0f0f0f;
+  display: inline-flex;
+  border-radius:25px;
+  width: 90%;
+  margin-left: 5%;
   color: white;
 }
-div.desenvolvedores{
+.slogan{
+  margin: auto;
+  text-align: center;
+  color:  #0099cc;
+  width: 25%;
+}
+.desenvolvedores{
+  margin: auto;
+  text-align: center;
+  width: 25%;
+}
+.contactos{
+  margin: auto;
+  text-align: center;
+  width: 25%;
+}
+.redes_sociais{
+  display: grid;
+  row-gap: 20px;
+  width: 10%;
+  float: right;
 
 }
