@@ -93,7 +93,7 @@
 									<li>
 										<div class="botoes">
 											<img src="imgs/details.png">
-											<a></a><button id="fav-button"><img src="imgs/heart_fav.png"></button></a>
+											<button class="fav-button" id="fav" onclick="adicionar_musica()"><img src="imgs/heart_fav.png"></button>
 										</div>
 									</li>
 								</ul>
@@ -146,13 +146,21 @@
 				<div class="media-group">
 					<ul class="music-list">
 						<li class="music-display">
-							<div class="media-left">
-							</div>
-							<div class="media-body">
-								<h3 class="title-musica media-heading"></h3>
-								<h4 class="artista-musica"></h4>
-								<a class= "pagina-detalhes" href="">Detalhes</a>
-							</div>
+							<ul>
+								<li>
+									<div>
+										<h3 class="title-musica media-heading"></h3>
+										<h4 class="artista-musica"></h4>
+									</div>
+								</li>
+								<li>
+									<div class="botoes">
+										<img src="imgs/details.png">
+										<button id="fav-button"><img src="imgs/heart_fav.png"></button>
+										<a class= "pagina-detalhes" href="">Detalhes</a>
+									</div>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</div>
@@ -164,17 +172,17 @@
 			<img >
 		</div>
 		<div class="slogan">
-			<h4>PlayTheMusic</h4>
+			<h3>PlayTheMusic</h3>
 			<h4>Seleciona as tuas músicas!</h4>
 
 		</div>
 		<div class="desenvolvedores">
-			<h4>Desenvolvedores</h4>
+			<h3>Desenvolvedores</h3>
 			<h4>Daniel Arroteia</h4>
 			<h4>João Vendeirinho</h4>
 		</div>
 		<div class="contactos">
-			<h4>Contactos</h4>
+			<h3>Contactos</h3>
 			<h4>2201163@my.ipleiria.pt</h4> 
 			<h4>2201147@my.ipleiria.pt</h4>
 		</div>

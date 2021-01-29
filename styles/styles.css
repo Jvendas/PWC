@@ -2,13 +2,11 @@
 body{
   background-color: darkgray;
   margin: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
   width: 90%;
   overflow-x: hidden; 
 }
 header{
-	background-image: radial-gradient(gray, black , black);
+	background-image: radial-gradient(gray,#3d3c3c,#3d3c3c);
   display: inline-flex;
   position: static;
   align-items: center;
@@ -18,6 +16,7 @@ header{
 }
 .topmusicas{
   background-image: radial-gradient();
+  
   position: left;
 }
 	
@@ -137,7 +136,8 @@ h2{
   color: #000b9e;
   font-family: Comic Sans MS;
   text-shadow: 2px 2px  #0099cc;
-  font-size: 60px;
+  font-size: 50px;
+  font-weight: 600;
 }
 footer{
   padding-top: 5px;
@@ -172,4 +172,12 @@ footer{
   width: 10%;
   float: right;
 
+}
+h3{
+  font-family: Comic Sans MS;
+  font-weight: 600;
+}
+h4{
+  font-family: Comic Sans MS;
+  font-weight: 600;
 }

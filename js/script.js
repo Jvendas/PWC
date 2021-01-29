@@ -23,15 +23,17 @@ $(document).ready(function() {
             $('.title-music',liTop).text(result.name);
             $('.title-artist', liTop).text(result.artist.name);
             $('.pagina-detalhes', liTop).prop("href","./detalhes.html?var1="+result.name+"&var2="+result.artist.name);
+            $('#fav',liTop).prop("value",result.name);
             $('.top-list').append(liTop);
         })
     })
-    $('#fav-button').click(function(){
-        console.log("ADD to FAV");
-    
-    })
+
 });
 
+function adicionar_musica() {
+    var musica = $("#fav").val();
+    console.log(musica);
+} 
        
 //Pesquisa
 $('#btnSearch').click(function(){
@@ -57,8 +59,7 @@ $('#btnSearch').click(function(){
     }).done(function(artistas){
         artistas.results.artistmatches.artist.forEach(function(result){
             var liArtista  = cloneArtistas.clone();
-            $('.title-artista',liArtista).text(result.name);
-            //$('.', liMusica).text(result.artist);   
+            $('.title-artista',liArtista).text(result.name);  
             $('.artist-list').append(liArtista);
         })
     })
@@ -71,7 +72,6 @@ $('#btnSearch').click(function(){
         albuns.results.albummatches.album.forEach(function(result){
             var liAlbum  = cloneAlbuns.clone();
             $('.title-album',liAlbum).text(result.name);
-            //$('.', liMusica).text(result.artist);   
             $('.album-list').append(liAlbum);
         })
     })
