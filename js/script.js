@@ -47,7 +47,6 @@ $('#btnSearch').click(function(){
     $('#pesquisa-albuns').show();
     
 
-
         //Pesquisar Artistas
     $.ajax({
         method:"GET",
