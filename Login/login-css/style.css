@@ -1,5 +1,5 @@
 body{
-	background-color:darkgrey;
+	background-image: linear-gradient(to right, darkgray, white, darkgray);
 	font-family: verdana;
 }
 
@@ -11,7 +11,7 @@ body{
 
 .card{
 	box-shadow: 1px 1px 5px #0099cc;
-	background-color:lightblue;
+	background-image: linear-gradient(to right, rgb(71, 168, 224), rgb(130, 194, 247),rgb(71, 168, 224));
 	padding: 30px;
 	border-radius: 5px;
 }
@@ -25,7 +25,7 @@ body{
 }
 .card-group > label{
 	width: 100%;
-	color: black;
+	color: rgb(19, 71, 114);
 	display: block;
 }
 
@@ -60,7 +60,7 @@ body{
 }
 
 .title{
-	color: rgb(58, 128, 185);
+	background-color: linear-gradient(to right, #4576dd, #a7b3cc);
 	font-family: Verdana;
 	font-size: 50px;
 	text-align: center;
