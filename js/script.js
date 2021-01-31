@@ -23,17 +23,13 @@ $(document).ready(function() {
             $('.title-music',liTop).text(result.name);
             $('.title-artist', liTop).text(result.artist.name);
             $('.pagina-detalhes', liTop).prop("href","./detalhes.html?var1="+result.name+"&var2="+result.artist.name);
-            $('#fav',liTop).prop("value",result.name);
             $('.top-list').append(liTop);
         })
     })
 
 });
 
-function adicionar_musica() {
-    var musica = $("#fav").val();
-    console.log(musica);
-} 
+
        
 //Pesquisa
 $('#btnSearch').click(function(){
@@ -86,6 +82,7 @@ $('#btnSearch').click(function(){
             $('.title-musica',liMusica).text(result.name);
             $('.artista-musica', liMusica).text(result.artist);
             $('.pagina-detalhes', liMusica).prop("href","./detalhes.html?var1="+result.name+"&var2="+result.artist);
+
             $('.music-list').append(liMusica);
         })
     })
