@@ -10,6 +10,7 @@ header{
   display: inline-flex;
   position: static;
   align-items: center;
+  margin-top: 5px;
   margin-left: 5%;
   border-radius:25px;
   width: 90%;
@@ -29,16 +30,19 @@ header{
   margin:auto;
 }
 .pesquisa-container{
+  border-radius: 5px;
   display: flex;
   width: 50%;
   height: 50%;
   margin: auto;
 }
 .campoPesquisa{
+  border-radius: 5px;
   width: 85%;
   font-size: 16px;
 }
 .btn-container{
+  border-radius: 5px;
   width: 10%;
   background-color: lightblue;
 }
@@ -111,6 +115,12 @@ main{
   position: relative;
   width: 90%;
   margin-left: 5%;
+}
+.column {
+  columns: 3;
+  float: left;
+  width: 85%;
+  height: 10%;
 }
 .itens{
   column-count:2;
