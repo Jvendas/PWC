@@ -21,14 +21,18 @@ $(document).ready(function() {
             $('.title-music',liDetalhes).text(detalhes.track.name);
             $('.title-artist', liDetalhes).text(detalhes.track.artist.name);
             $('.title-album', liDetalhes).text(detalhes.track.album.title);
+            $('.top-tag', liDetalhes).text(detalhes.track.toptags.tag[0]["name"]);
             $('#imagem-musica',liDetalhes).attr("src",detalhes.track.album.image[3]['#text']);
             $('.details-list').append(liDetalhes);
-        })
-        
-
+        })    
 });
-$('#btnSearch').click(function(){
-    var valorPesquisa = $('#pesquisa').val();
 
-}); 
-
+function adicionar_musica() {
+    // $('.')
+    let params = (new URL(document.location)).searchParams;
+    let artista = params.get('var2'); 
+    let musica = params.get('var1'); 
+    $("#like").attr("src","imgs/heart_fav_selected.png");
+    console.log(artista);
+    console.log(musica);
+}
