@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+    <title>Log in</title>
+
+    <link rel="stylesheet" href="Login/login-css/style.css">
+
+</head>
+<body>
+	<form class="form" id="login">
+		<div class="card">
+			<div class="card-top">
+				<img class="imglogin" src="Login/login-img/boneco.jpg" alt="cara">
+				<h2 class="title">Login</h2>	
+			</div>
+
+			<div class="card-group">
+				<label>E-mail</label>
+				<input id="email" type="email" name="E-mail" placeholder="Indique o seu E-mail" >
+			</div>
+
+			<div class="card-group">
+				<label>Password</label>
+				<input id="pass" type="password" name="Password" placeholder="Indique a sua Password" >
+			</div>
+
+				<div class="card-group">
+				<label><input type="checkbox">Memorizar os meus dados</label>
+			</div>
+
+			<div class="card-group btn">
+				<button onclick="fazer_login()">ENTRAR</button>
+			</div>
+		</div>
+	</form>
+	<script type="text/javascript" src="Login/login_js.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+	
+</body>
+</html>

@@ -14,6 +14,10 @@ $('#pesquisa-albuns').hide();
 //Apresentação de top Musicas
 $(document).ready(function() {
     $(".top-list").empty();
+    if (localStorage.length!=0){
+        $("#favoritos").attr("href", "./favoritos.html")
+        $("#favoritos").text("Favoritos")
+    }
     $.ajax({
         method:"GET",
         url:"http://ws.audioscrobbler.com/2.0/?method=geo.gettoptracks&country="+pais+"&api_key="+apiKey+"&format=json&limit=10"
@@ -86,4 +90,16 @@ $('#btnSearch').click(function(){
         })
     })
 
+});
+
+$(window).on('resize', function(){
+    var win = $(this); //this = window
+    if (win.width() <= 1280) { 
+        $('select').show();
+        $('#nav-list').hide();
+    }
+    else{
+        $('select').hide();
+        $('#nav-list').show();
+    }
 });
