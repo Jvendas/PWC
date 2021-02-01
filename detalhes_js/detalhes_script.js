@@ -4,6 +4,10 @@ var apiSecret = 'a9af45ac5f7059fc01ffadf7bb3ec8a9';
 var cloneDetalhes = $('.detalhes-display').clone();
 $(document).ready(function() {
     $(".details-list").empty();
+    if (localStorage.length!=0){
+        $("#favoritos").attr("href", "./favoritos.html")
+        $("#favoritos").text("Favoritos")
+    }
     //Função adquirição de Variáveis Musica / Artista
     
     let params = (new URL(document.location)).searchParams;
@@ -35,4 +39,19 @@ function adicionar_musica() {
     $("#like").attr("src","imgs/heart_fav_selected.png");
     console.log(artista);
     console.log(musica);
+    console.log(localStorage.length);
+    if (localStorage.length==0){
+        window.alert("Primeiro Faça Login");
+    }else if (localStorage.length>=502){
+        window.alert("Apresenta a Lista de Favoritos Cheia");
+    }else{
+        localStorage.setItem(musica,artista);
+    }
 }
+$(window).on('resize', function(){
+    var win = $(this); //this = window
+    if (win.width() <= 1280) { 
+        $('select').show();
+        $('#nav-list').hide();
+    }
+});

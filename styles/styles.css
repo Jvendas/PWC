@@ -4,19 +4,18 @@ body{
   margin: auto;
   width: 90%;
   overflow-x: hidden; 
+  text-align: center;
 }
 header{
 	background-image: radial-gradient(gray,#3d3c3c,#3d3c3c);
   display: inline-flex;
   position: static;
   align-items: center;
-  margin-left: 5%;
   border-radius:25px;
-  width: 90%;
+  width: 100%;
 }
 .topmusicas{
   background-image: radial-gradient();
-  
   position: left;
 }
 	
@@ -101,7 +100,7 @@ main{
   background-image: linear-gradient(to right, darkgray, white, darkgray);
   display: inline-block;
   position: relative;
-  margin-top: 28%;
+  margin-top: 450px;
   width: 90%;
   margin-left: 5%;
 }
@@ -149,7 +148,6 @@ footer{
   display: inline-flex;
   border-radius:25px;
   width: 90%;
-  margin-left: 5%;
   color: white;
 }
 .slogan{
@@ -185,4 +183,17 @@ h4{
 }
 #detalhes-musica {
   text-align: center;
+}
+nav select{
+  display:none;
+  background: #0099cc;
+  font-size: 20px;
+}
+@media only screen and (max-width: 1200px){
+  .top-list {
+    column-count:1;
+  }
+  .foooter{
+    font-size: 15px;
+  }
 }

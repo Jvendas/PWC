@@ -40,17 +40,16 @@
         <div class="panel-body">
             <div class="media-group">
                 <ul class="details-list">
-                    <li class="detalhes-display">
+                    <li class="favoritos-display">
                         <div>
                             <img id="imagem-musica" src="">
                         </div>
                         <div class="top-media">
-                            <h2 class="listeners"></h2>
                             <h3 class="title-music"></h3>
                             <h4 class="title-artist"></h4>
                             <h4 class="title-album"></h4>
                             <h4 class="top-tag"></h4>
-                            <button class="fav-button" onclick="adicionar_musica()"><img id="like" src="imgs/heart_fav.png"></button>
+                            <button class="remover-fav" onclick="remover_musica(this.class)"><img id="thrash" src="imgs/thrash_can.png"></button>
                         </div>
                     </li>
                 </ul>
@@ -67,14 +66,14 @@
 
 		</div>
 		<div class="desenvolvedores">
-			<h3 class="foooter">Desenvolvedores</h3>
-			<h4 class="foooter">Daniel Arroteia</h4>
-			<h4 class="foooter">João Vendeirinho</h4>
+			<h3>Desenvolvedores</h3>
+			<h4>Daniel Arroteia</h4>
+			<h4>João Vendeirinho</h4>
 		</div>
 		<div class="contactos">
-			<h3 class="foooter">Contactos</h3>
-			<h4 class="foooter">2201163@my.ipleiria.pt</h4> 
-			<h4 class="foooter">2201147@my.ipleiria.pt</h4>
+			<h3>Contactos</h3>
+			<h4>2201163@my.ipleiria.pt</h4> 
+			<h4>2201147@my.ipleiria.pt</h4>
 		</div>
 		<div class="redes_sociais">
 			<img src="imgs/facebook.png">
@@ -84,7 +83,7 @@
 
 		</div>
 	</footer>
-	<script type="text/javascript" src="detalhes_js/detalhes_script.js"></script>
+	<script type="text/javascript" src="Favoritos/favorito.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
 
